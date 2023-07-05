@@ -6,7 +6,7 @@ This allows you to broadcast your app UPS information and status from the comput
 ### All operating systems
 This assumes that **apcupsd** has already been installed:
 
-Dowload the Universal release of this script and install **TMUX**, edit the ApcStartup.sh file and put the path of the python script in (apcrest.py).
+Dowload the Universal release of this script and install **TMUX**, edit the ApcStartup.sh file and put the path of the python script in (apc.py).
 
 Go co cronjob with ```crontab -e```, press ```i``` then add ```@reboot /path/to/script/ApcStartup.sh``` (make sure to put the correct path to ApcStartup.sh), then press ```esc``` and type ```:wq``` to save
 

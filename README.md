@@ -14,7 +14,7 @@ reboot your system and check the output of ```http://<Server IP>:5000/apcaccess`
 
 ### Unraid
 If you are on unraid:
-Download the USER SCRIPT, PYTHON3 and UNRAID-TMUX plugins then ownload the unraid release of this project
+Download the USER SCRIPT, PYTHON3 and UNRAID-TMUX plugins then download the unraid release of this project
 
 Place the **APC UPS** folder in the **/boot/config/plugins/user.scripts/scripts/** directory
 

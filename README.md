@@ -5,8 +5,7 @@ This allows you to broadcast your app UPS information and status from the comput
 
 ### Unraid
 If you are on unraid:
-Download the USER SCRIPT, PYTHON3 and UNRAID-TMUX plugins.
-Download the unraid release of this project
+Download the USER SCRIPT, PYTHON3 and UNRAID-TMUX plugins then ownload the unraid release of this project
 
 Place the **APC UPS** folder in the **/boot/config/plugins/user.scripts/scripts/** directory
 

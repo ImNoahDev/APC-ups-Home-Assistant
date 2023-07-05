@@ -3,6 +3,16 @@ This allows you to broadcast your app UPS information and status from the comput
 
 ## Usage
 
+### All operating systems
+This assumes that **apcupsd** has already been installed:
+
+Dowload the Universal release of this script, edit the ApcStartup.sh file and put the path of the python script in (apcrest.py).
+Install tmux
+
+Go co cronjob with ```crontab -e```, press ```i``` then add ```@reboot /path/to/script/ApcStartup.sh``` (make sure to put the correct path to ApcStartup.sh)
+
+reboot your system and check the output of ```http://<Server IP>:5000/apcaccess```
+
 ### Unraid
 If you are on unraid:
 Download the USER SCRIPT, PYTHON3 and UNRAID-TMUX plugins then ownload the unraid release of this project

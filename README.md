@@ -8,7 +8,7 @@ This assumes that **apcupsd** has already been installed:
 
 Dowload the Universal release of this script and install **TMUX**, edit the ApcStartup.sh file and put the path of the python script in (apcrest.py).
 
-Go co cronjob with ```crontab -e```, press ```i``` then add ```@reboot /path/to/script/ApcStartup.sh``` (make sure to put the correct path to ApcStartup.sh)
+Go co cronjob with ```crontab -e```, press ```i``` then add ```@reboot /path/to/script/ApcStartup.sh``` (make sure to put the correct path to ApcStartup.sh), then press ```esc``` and type ```:wq``` to save
 
 reboot your system and check the output of ```http://<Server IP>:5000/apcaccess```
 

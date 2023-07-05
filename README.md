@@ -9,13 +9,13 @@ Download the USER SCRIPT, PYTHON3 and UNRAID-TMUX plugins then ownload the unrai
 
 Place the **APC UPS** folder in the **/boot/config/plugins/user.scripts/scripts/** directory
 
-Go to Settings > User Scripts and set the **APC UPS** sctipt to run **At startup of array** (If the script does not appear, try restarting unraid first)
+Go to Settings > User Scripts and set the **APC UPS** script to run **At startup of array** (If the script does not appear, try restarting unraid first)
 
-Restart unraid or the array to make the script run and verify it has started succesfully by going to **http://<Unraid IP>:5000/apcaccess** and checking the output
+Restart unraid or the array to make the script run and verify it has started succesfully by going to ```http://<Unraid IP>:5000/apcaccess``` and checking the output
 
 ## Home Assistant
 Go to Configuration.yaml and place this inside:
-**Be sure to change <Server ip> to the ip of the server/computer that has the ups connected**
+**Be sure to change ```<Server ip>``` to the ip of the server/computer that has the ups connected**
 
 ```
 sensor:

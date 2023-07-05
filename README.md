@@ -1,12 +1,12 @@
 # APC-ups-Home-Assistant
-This allows you to broadcast your app UPS information and status from the computer it is connected to, to home assistant
+This allows you to broadcast your APC UPS information and status from the computer it is connected to, to home assistant
 
 ## Usage
 
 ### All operating systems
-This assumes that **apcupsd** has already been installed:
+This assumes that [**apcupsd**](http://www.apcupsd.org) has already been installed:
 
-Dowload the Universal release of this script and install **TMUX**, edit the ApcStartup.sh file and put the path of the python script in (apc.py).
+Dowload the [Universal release](https://github.com/dev-bash/APC-ups-Home-Assistant/releases/download/Release/Universal.zip) of this script and install [**TMUX**](https://github.com/tmux/tmux/wiki), edit the ApcStartup.sh file and put the path of the python script in (apc.py).
 
 Go co cronjob with ```crontab -e```, press ```i``` then add ```@reboot /path/to/script/ApcStartup.sh``` (make sure to put the correct path to ApcStartup.sh), then press ```esc``` and type ```:wq``` to save
 
@@ -14,7 +14,7 @@ reboot your system and check the output of ```http://<Server IP>:5000/apcaccess`
 
 ### Unraid
 If you are on unraid:
-Download the USER SCRIPT, PYTHON3 and [UNRAID-TMUX](https://gist.githubusercontent.com/justin-himself/2ce4af30dd9fc372df7aadb64fd4df35/raw/0a66faaa79670d1946ba3c8b1643f844406b7938/unraid-tmux.plg) plugins then download the unraid release of this project
+Download the USER SCRIPTS, PYTHON3 and [UNRAID-TMUX](https://gist.githubusercontent.com/justin-himself/2ce4af30dd9fc372df7aadb64fd4df35/raw/0a66faaa79670d1946ba3c8b1643f844406b7938/unraid-tmux.plg) plugins then download the [unraid release](https://github.com/dev-bash/APC-ups-Home-Assistant/releases/download/Release/Unraid.zip) of this project
 
 
 Place the **APC UPS** folder in the **/boot/config/plugins/user.scripts/scripts/** directory

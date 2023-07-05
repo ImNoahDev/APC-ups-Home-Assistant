@@ -1,4 +1,4 @@
-# APC-ups-Home-Assistant
+# APC ups Home Assistant
 This allows you to broadcast your APC UPS information and status from the computer it is connected to, to home assistant
 
 ## Usage

@@ -1,0 +1,34 @@
+sensor:
+  - platform: rest
+    resource: http://<Server ip>:5000/apcaccess
+    name: ups
+    value_template: "{{ value_json.output }}"
+    json_attributes:
+      - STATUS
+      - BCHARGE
+      - TIMELEFT
+      - BATTV
+      - NOMBATTV
+    scan_interval: 10
+
+  - platform: template
+    sensors:
+      ups_status:
+        friendly_name: UPS Status
+        value_template: "{{ state_attr('sensor.ups', 'STATUS') }}"
+      ups_battery_charge:
+        friendly_name: UPS Battery Charge
+        value_template: "{{ state_attr('sensor.ups', 'BCHARGE') | regex_replace('[^0-9.]','') | float }}"
+        unit_of_measurement: "%"
+      ups_battery_voltage:
+        friendly_name: UPS Battery Voltage
+        value_template: "{{ state_attr('sensor.ups', 'BATTV') | regex_replace('[^0-9.]','') | float }}"
+        unit_of_measurement: "V"
+      ups_nominal_battery_voltage:
+        friendly_name: UPS Nominal Battery Voltage
+        value_template: "{{ state_attr('sensor.ups', 'NOMBATTV') | regex_replace('[^0-9.]','') | float }}"
+        unit_of_measurement: "V"
+      ups_time_left:
+        friendly_name: UPS Time Left
+        value_template: "{{ state_attr('sensor.ups', 'TIMELEFT') | regex_replace('[^0-9.]','') | float }}"
+        unit_of_measurement: "min"

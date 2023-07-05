@@ -15,6 +15,7 @@ reboot your system and check the output of ```http://<Server IP>:5000/apcaccess`
 ### Unraid
 If you are on unraid:
 Download the USER SCRIPT, PYTHON3 and UNRAID-TMUX plugins then download the unraid release of this project
+[Tmux](https://gist.githubusercontent.com/justin-himself/2ce4af30dd9fc372df7aadb64fd4df35/raw/0a66faaa79670d1946ba3c8b1643f844406b7938/unraid-tmux.plg)
 
 Place the **APC UPS** folder in the **/boot/config/plugins/user.scripts/scripts/** directory
 

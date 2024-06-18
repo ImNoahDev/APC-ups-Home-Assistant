@@ -1,9 +1,7 @@
 from flask import Flask, jsonify
 import subprocess
 import re
-
-cli = sys.modules['flask.cli']
-cli.show_server_banner = lambda *x: None
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -26,4 +24,4 @@ def parse_apcaccess_output(output):
     return data
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    serve(app, host='0.0.0.0')

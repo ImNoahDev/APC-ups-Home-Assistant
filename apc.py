@@ -2,6 +2,9 @@ from flask import Flask, jsonify
 import subprocess
 import re
 
+cli = sys.modules['flask.cli']
+cli.show_server_banner = lambda *x: None
+
 app = Flask(__name__)
 
 @app.route('/apcaccess', methods=['GET'])
